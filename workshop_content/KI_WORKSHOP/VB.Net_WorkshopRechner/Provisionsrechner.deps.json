@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Provisionsrechner/1.0.0": {
+        "dependencies": {
+          "Provisionierung": "1.0.0"
+        },
+        "runtime": {
+          "Provisionsrechner.dll": {}
+        }
+      },
+      "Provisionierung/1.0.0": {
+        "runtime": {
+          "Provisionierung.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Provisionsrechner/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Provisionierung/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

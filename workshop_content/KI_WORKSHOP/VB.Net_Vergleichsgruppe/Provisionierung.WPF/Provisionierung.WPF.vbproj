@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Provisionierung.WPF</RootNamespace>
+    <AssemblyName>Provisionsrechner</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Provisionierung\Provisionierung.vbproj" />
+  </ItemGroup>
+
+</Project>

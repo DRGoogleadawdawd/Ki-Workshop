@@ -1,0 +1,11 @@
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.vbproj.AssemblyReference.cache
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.LegacyForm.resources
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.vbproj.GenerateResource.cache
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\bin\Debug\WorkshopRechner.exe
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\bin\Debug\WorkshopRechner.pdb
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\bin\Debug\WorkshopRechner.xml
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.Resources.resources
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.vbproj.CoreCompileInputs.cache
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.exe
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.xml
+C:\Workspace\WorkshopRechner-20260526T063706Z-3-001\KI_WORKSHOP\VB.Net_Legacy\obj\Debug\WorkshopRechner.pdb
