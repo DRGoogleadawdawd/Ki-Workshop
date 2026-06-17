@@ -1,0 +1,107 @@
+<Window x:Class="Provisionierung.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Provisionsrechner - Legacy Migration" 
+        Height="550" Width="500"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0" 
+                   Text="📊 Provisionsberechnung" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20"/>
+
+        <!-- Umsatz -->
+        <StackPanel Grid.Row="1" Margin="0,10">
+            <TextBlock Text="Umsatz (€)" FontWeight="SemiBold" Margin="0,0,0,5"/>
+            <TextBox x:Name="txtUmsatz" 
+                     Text="1000"
+                     PreviewTextInput="OnPreviewTextInput"/>
+        </StackPanel>
+
+        <!-- Kategorie -->
+        <StackPanel Grid.Row="2" Margin="0,10">
+            <TextBlock Text="Kategorie" FontWeight="SemiBold" Margin="0,0,0,5"/>
+            <ComboBox x:Name="cmbKategorie" SelectedIndex="0">
+                <ComboBoxItem Content="A - Premium (10%)"/>
+                <ComboBoxItem Content="B - Standard (7%)"/>
+                <ComboBoxItem Content="C - Basis (5%)"/>
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Optionen -->
+        <StackPanel Grid.Row="3" Margin="0,15">
+            <CheckBox x:Name="chkVIP" Content="VIP-Kunde (+2% Provision + 50€ Pauschale)" 
+                      FontSize="13" Margin="0,5"/>
+            <CheckBox x:Name="chkJubilaeum" Content="Jubiläumsaktion (+5% Provision, nur ab 5000€)" 
+                      FontSize="13" Margin="0,5"/>
+        </StackPanel>
+
+        <!-- Berechnen Button -->
+        <Button Grid.Row="4" 
+                x:Name="btnBerechnen"
+                Content="🚀 Berechnen" 
+                Click="OnBerechnenClick"
+                Margin="0,20,0,10"
+                HorizontalAlignment="Left"
+                Width="150"/>
+
+        <!-- Ergebnis -->
+        <Border Grid.Row="5" 
+                Background="#E3F2FD" 
+                BorderBrush="#2196F3" 
+                BorderThickness="2" 
+                CornerRadius="8"
+                Padding="20"
+                Margin="0,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0" 
+                           Text="Ihre Provision" 
+                           FontSize="14" 
+                           Foreground="#666"/>
+                
+                <TextBlock Grid.Row="1" 
+                           x:Name="lblErgebnis"
+                           Text="--" 
+                           FontSize="36" 
+                           FontWeight="Bold" 
+                           Foreground="#1976D2"
+                           Margin="0,10"/>
+                
+                <TextBlock Grid.Row="2" 
+                           x:Name="lblDetails"
+                           Text="Geben Sie einen Umsatz ein und klicken Sie auf Berechnen"
+                           FontSize="12" 
+                           Foreground="#888"
+                           TextWrapping="Wrap"/>
+            </Grid>
+        </Border>
+
+        <!-- Status -->
+        <TextBlock Grid.Row="6" 
+                   x:Name="lblStatus"
+                   Text="Bereit" 
+                   FontSize="11" 
+                   Foreground="#999"
+                   Margin="0,10,0,0"/>
+    </Grid>
+</Window>
